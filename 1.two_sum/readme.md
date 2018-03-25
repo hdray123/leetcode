@@ -19,7 +19,7 @@ array定义后空间固定，vector通过push_back增加，pop_back删除 ，可
 
 unordered_map<int,int> map的数据类型，通过key找到value通过find() 找不到返回unordered_map.end().
 
-####本题的思路是创建一个map，target-num_1=num_2，应为num_1和num_2都在vector列表中，在遍历vector列表的时候，算出（target-列表元素)的值在将值在map中寻找对应的key如果找到则说明差已经在前面出现过了并被存储到了map中 value对应的是那个num在vector的下标位置，如果没有找到则说明差应该在后面，所以讲num和i存入map。
+#### 本题的思路是创建一个map，target-num_1=num_2，应为num_1和num_2都在vector列表中，在遍历vector列表的时候，算出（target-列表元素)的值在将值在map中寻找对应的key如果找到则说明差已经在前面出现过了并被存储到了map中 value对应的是那个num在vector的下标位置，如果没有找到则说明差应该在后面，所以讲num和i存入map。
 
 ```c++
 if(valuemap.find(num[i])==valuemap.end()){
